@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+  background-color: #000;
+  color: white;
+}
+
+body.light {
+  background-color: #f4f4f4;
+  color: #111;
+}
+
+h1 {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  z-index: 2;
+  font-size: 20px;
+  margin: 0;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#controls {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  background: rgba(20, 20, 20, 0.85);
+  padding: 12px;
+  border-radius: 10px;
+  max-width: 240px;
+  z-index: 2;
+  font-size: 13px;
+}
+
+body.light #controls {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.slider-container label {
+  display: block;
+  margin-top: 10px;
+}
+
+.slider-container input[type="range"] {
+  width: 100%;
+  margin-top: 5px;
+}
+
+#pauseBtn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 8px 14px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+body.light #pauseBtn {
+  background-color: #ccc;
+  color: black;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+#tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 11px;
+  pointer-events: none;
+  display: none;
+  z-index: 3;
+}
