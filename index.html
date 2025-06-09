@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Solar System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>3D Solar System</h1>
+
+  <div id="controls">
+    <h2>Adjust Planet Speeds</h2>
+    <div class="slider-container" id="sliders"></div>
+    <label class="toggle">
+      <input type="checkbox" id="themeToggle" />
+      <span>Dark/Light Mode</span>
+    </label>
+  </div>
+
+  <button id="pauseBtn">Pause</button>
+  <div id="tooltip"></div>
+  <div id="container"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
